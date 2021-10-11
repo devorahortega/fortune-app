@@ -16,8 +16,9 @@ class MyExamplesController < ApplicationController
   def bottle_method
     render json: {message:
     beer = 99
+    array = []
     99.times do
-      puts "#{beer} bottles of beer on the wall, #{beer} bottles of beer."
+      array << "#{beer} bottles of beer on the wall, #{beer} bottles of beer."
       beer = beer - 1
       puts "Take one down and pass it around, #{beer} bottles of beer on the wall."
     end}
