@@ -7,7 +7,9 @@ class MyExamplesController < ApplicationController
 
   def lotto_method
     num = rand(1..60)
+    6.times do
     render json: { message: "This is the winning number", lotto: num }
+    end
   end
 
   def return_method
