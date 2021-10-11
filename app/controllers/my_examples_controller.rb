@@ -9,4 +9,17 @@ class MyExamplesController < ApplicationController
     num = rand(1..60)
     render json: { message: "This is the winning number", lotto: num }
   end
+
+  def return_method
+  end
+
+  def bottle_method
+    render json: {message:
+    beer = 99
+    99.times do
+      puts "#{beer} bottles of beer on the wall, #{beer} bottles of beer."
+      beer = beer - 1
+      puts "Take one down and pass it around, #{beer} bottles of beer on the wall."
+    end}
+  end
 end
